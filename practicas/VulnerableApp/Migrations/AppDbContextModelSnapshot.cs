@@ -40,7 +40,7 @@ namespace VulnerableApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("PasswordHash")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -59,7 +59,7 @@ namespace VulnerableApp.Migrations
                             Balance = 1000m,
                             CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@test.com",
-                            Password = "admin",
+                            PasswordHash = "$2a$11$K.xV/6E6D8.lV4Yp1r4Y.O/C.v7v7v7v7v7v7v7v7v7v7v7v7v7v7",
                             Username = "admin"
                         },
                         new
@@ -68,7 +68,7 @@ namespace VulnerableApp.Migrations
                             Balance = 500m,
                             CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user@test.com",
-                            Password = "123456",
+                            PasswordHash = "$2a$11$e/r1v7v7v7v7v7v7v7v7v.O/C.v7v7v7v7v7v7v7v7v7v7v7v7v7v",
                             Username = "user1"
                         },
                         new
@@ -77,7 +77,7 @@ namespace VulnerableApp.Migrations
                             Balance = 750m,
                             CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user2@test.com",
-                            Password = "password",
+                            PasswordHash = "$2a$11$w/q1v7v7v7v7v7v7v7v7v.O/C.v7v7v7v7v7v7v7v7v7v7v7v7v7v",
                             Username = "user2"
                         });
                 });

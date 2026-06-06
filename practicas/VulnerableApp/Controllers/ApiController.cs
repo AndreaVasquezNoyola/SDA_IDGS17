@@ -14,24 +14,21 @@ namespace VulnerableApp.Controllers
         [HttpGet("user/{id}")]
         public IActionResult GetUser(int id)
         {
+            var currentUserId = HttpContext.Session.GetInt32("UserId"); 
+            if (!currentUserId.HasValue) return Unauthorized(); 
+            if (id != currentUserId.Value) return Forbid(); 
+
             var user = _db.Users.Find(id);
             if (user == null) return NotFound();
 
-            // Vulnerabilidad: Expone todos los campos, incluyendo la contraseña
-            return Ok(new
-            {
-                user.Id,
-                user.Username,
-                user.Email,
-                user.Balance,
-                user.Password
-            });
+            return Ok(new { user.Id, user.Username, user.Email }); 
         }
 
         [HttpGet("users")]
         public IActionResult GetAllUsers()
         {
-            var users = _db.Users.ToList();
+            // Modificado para no exponer el PasswordHash de todos los usuarios
+            var users = _db.Users.Select(u => new { u.Id, u.Username, u.Email }).ToList();
             return Ok(users);
         }
     }

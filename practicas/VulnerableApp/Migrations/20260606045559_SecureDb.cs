@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace VulnerableApp.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class SecureDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,7 +20,7 @@ namespace VulnerableApp.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Balance = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -32,12 +32,12 @@ namespace VulnerableApp.Migrations
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "Id", "Balance", "CreatedAt", "Email", "Password", "Username" },
+                columns: new[] { "Id", "Balance", "CreatedAt", "Email", "PasswordHash", "Username" },
                 values: new object[,]
                 {
-                    { 1, 1000m, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@test.com", "admin", "admin" },
-                    { 2, 500m, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user@test.com", "123456", "user1" },
-                    { 3, 750m, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user2@test.com", "password", "user2" }
+                    { 1, 1000m, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@test.com", "$2a$11$K.xV/6E6D8.lV4Yp1r4Y.O/C.v7v7v7v7v7v7v7v7v7v7v7v7v7v7", "admin" },
+                    { 2, 500m, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user@test.com", "$2a$11$e/r1v7v7v7v7v7v7v7v7v.O/C.v7v7v7v7v7v7v7v7v7v7v7v7v7v", "user1" },
+                    { 3, 750m, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user2@test.com", "$2a$11$w/q1v7v7v7v7v7v7v7v7v.O/C.v7v7v7v7v7v7v7v7v7v7v7v7v7v", "user2" }
                 });
         }
 
