@@ -1,0 +1,286 @@
+2026-07-02 14:44:38.993 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 14:47:50.589 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 14:50:39.143 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 14:51:44.824 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 14:53:42.201 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 14:59:05.207 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 15:01:27.058 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 15:03:20.931 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 15:07:24.708 -06:00 [INF] Application is shutting down...
+2026-07-02 15:07:33.887 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 15:07:34.059 -06:00 [INF] User profile is available. Using 'C:\Users\Mau50\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-02 15:07:34.172 -06:00 [INF] Now listening on: http://localhost:5228
+2026-07-02 15:07:34.177 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-02 15:07:34.179 -06:00 [INF] Hosting environment: Development
+2026-07-02 15:07:34.181 -06:00 [INF] Content root path: C:\Users\Mau50\source\repos\VulnerableApp
+2026-07-02 15:07:41.170 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/ - null null
+2026-07-02 15:07:41.198 -06:00 [WRN] Failed to determine the https port for redirect.
+2026-07-02 15:07:41.357 -06:00 [INF] Executing endpoint 'VulnerableApp.Controllers.HomeController.Index (VulnerableApp)'
+2026-07-02 15:07:41.414 -06:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller VulnerableApp.Controllers.HomeController (VulnerableApp).
+2026-07-02 15:07:41.442 -06:00 [INF] Inicio Home.Index desde IP: ::1
+2026-07-02 15:07:41.445 -06:00 [INF] Fin Home.Index. Tiempo: 18 ms
+2026-07-02 15:07:41.472 -06:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 15:07:41.778 -06:00 [INF] Executed ViewResult - view Index executed in 309.3977ms.
+2026-07-02 15:07:41.782 -06:00 [INF] Executed action VulnerableApp.Controllers.HomeController.Index (VulnerableApp) in 360.3848ms
+2026-07-02 15:07:41.786 -06:00 [INF] Executed endpoint 'VulnerableApp.Controllers.HomeController.Index (VulnerableApp)'
+2026-07-02 15:07:41.795 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/ - 200 null text/html; charset=utf-8 629.0439ms
+2026-07-02 15:07:41.954 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-02 15:07:41.959 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/jquery/dist/jquery.min.js - null null
+2026-07-02 15:07:41.959 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/VulnerableApp.styles.css?v=pGi5QHI7edwYw-oFSAhNLpFbjP5kWh034lowgBP76Dk - null null
+2026-07-02 15:07:41.959 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-02 15:07:41.959 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/css/site.css?v=2YAZiK4O-UnINKDlzRwWlX89s0X4xxj6MFk9yPjPSvY - null null
+2026-07-02 15:07:41.961 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-02 15:07:41.975 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:41.975 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:41.976 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:41.987 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.004 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.004 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.034 -06:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\mw87yb4kop-{0}-feam9ql89x-feam9ql89x.gz'
+2026-07-02 15:07:42.034 -06:00 [INF] Sending file. Request path: 'VulnerableApp.styles.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\uoihj7ooh1-{0}-872arltcfk-872arltcfk.gz'
+2026-07-02 15:07:42.035 -06:00 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\vooadvfgdr-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-02 15:07:42.039 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.042 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.045 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.049 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/css/site.css?v=2YAZiK4O-UnINKDlzRwWlX89s0X4xxj6MFk9yPjPSvY - 200 695 text/css 90.0234ms
+2026-07-02 15:07:42.052 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/VulnerableApp.styles.css?v=pGi5QHI7edwYw-oFSAhNLpFbjP5kWh034lowgBP76Dk - 200 1142 text/css 93.3587ms
+2026-07-02 15:07:42.055 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 94.6661ms
+2026-07-02 15:07:42.075 -06:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\4zpp9vfi2r-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-02 15:07:42.097 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.104 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 151.437ms
+2026-07-02 15:07:42.203 -06:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\1pcvqu3pys-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-02 15:07:42.207 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.210 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 251.0912ms
+2026-07-02 15:07:42.243 -06:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\qbdzirddbn-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-02 15:07:42.248 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.253 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 293.7466ms
+2026-07-02 15:07:42.289 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/favicon.ico - null null
+2026-07-02 15:07:42.295 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.314 -06:00 [INF] Sending file. Request path: 'favicon.ico'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\r4plb4jrvv-{0}-61n19gt1b8-61n19gt1b8.gz'
+2026-07-02 15:07:42.318 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:07:42.320 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/favicon.ico - 200 5463 image/x-icon 30.9936ms
+2026-07-02 15:07:58.396 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/auth - null null
+2026-07-02 15:07:58.410 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/auth - 404 0 null 13.0354ms
+2026-07-02 15:07:58.418 -06:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5228/auth, Response status code: 404
+2026-07-02 15:08:02.555 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/auth/login - null null
+2026-07-02 15:08:02.568 -06:00 [INF] Executing endpoint 'VulnerableApp.Controllers.AuthController.Login (VulnerableApp)'
+2026-07-02 15:08:02.580 -06:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller VulnerableApp.Controllers.AuthController (VulnerableApp).
+2026-07-02 15:08:02.884 -06:00 [INF] Executing ViewResult, running view Login.
+2026-07-02 15:08:03.030 -06:00 [INF] Executed ViewResult - view Login executed in 148.5534ms.
+2026-07-02 15:08:03.034 -06:00 [INF] Executed action VulnerableApp.Controllers.AuthController.Login (VulnerableApp) in 449.1247ms
+2026-07-02 15:08:03.036 -06:00 [INF] Executed endpoint 'VulnerableApp.Controllers.AuthController.Login (VulnerableApp)'
+2026-07-02 15:08:03.041 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/auth/login - 200 null text/html; charset=utf-8 486.2432ms
+2026-07-02 15:08:03.099 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-02 15:08:03.104 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/css/site.css?v=2YAZiK4O-UnINKDlzRwWlX89s0X4xxj6MFk9yPjPSvY - null null
+2026-07-02 15:08:03.104 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/VulnerableApp.styles.css?v=pGi5QHI7edwYw-oFSAhNLpFbjP5kWh034lowgBP76Dk - null null
+2026-07-02 15:08:03.108 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/jquery/dist/jquery.min.js - null null
+2026-07-02 15:08:03.108 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-02 15:08:03.108 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-02 15:08:03.115 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.115 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.115 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.134 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.136 -06:00 [INF] Sending file. Request path: 'VulnerableApp.styles.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\uoihj7ooh1-{0}-872arltcfk-872arltcfk.gz'
+2026-07-02 15:08:03.137 -06:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\mw87yb4kop-{0}-feam9ql89x-feam9ql89x.gz'
+2026-07-02 15:08:03.138 -06:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\4zpp9vfi2r-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-02 15:08:03.140 -06:00 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\vooadvfgdr-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-02 15:08:03.143 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.146 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.147 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.150 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.153 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.155 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/VulnerableApp.styles.css?v=pGi5QHI7edwYw-oFSAhNLpFbjP5kWh034lowgBP76Dk - 200 1142 text/css 50.761ms
+2026-07-02 15:08:03.189 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/css/site.css?v=2YAZiK4O-UnINKDlzRwWlX89s0X4xxj6MFk9yPjPSvY - 200 695 text/css 85.324ms
+2026-07-02 15:08:03.190 -06:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\qbdzirddbn-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-02 15:08:03.191 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 92.9222ms
+2026-07-02 15:08:03.194 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 85.7879ms
+2026-07-02 15:08:03.216 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.228 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.230 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 121.6179ms
+2026-07-02 15:08:03.233 -06:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\1pcvqu3pys-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-02 15:08:03.241 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:08:03.244 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 135.2985ms
+2026-07-02 15:09:47.167 -06:00 [INF] Request starting HTTP/1.1 POST http://localhost:5228/auth/login - application/x-www-form-urlencoded 213
+2026-07-02 15:09:47.176 -06:00 [INF] Executing endpoint 'VulnerableApp.Controllers.AuthController.Login (VulnerableApp)'
+2026-07-02 15:09:47.218 -06:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String) on controller VulnerableApp.Controllers.AuthController (VulnerableApp).
+2026-07-02 15:09:47.478 -06:00 [INF] Inicio Auth.Login. Intento de acceso para Usuario: user1 desde IP: ::1
+2026-07-02 15:09:51.095 -06:00 [INF] Executed DbCommand (66ms) [Parameters=[@username='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Balance], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @username
+2026-07-02 15:09:51.195 -06:00 [INF] Evento de Autenticación: Login exitoso para Usuario: user1. Fin Auth.Login. Tiempo: 3717 ms
+2026-07-02 15:09:51.199 -06:00 [INF] Executing RedirectResult, redirecting to /Auth/Dashboard.
+2026-07-02 15:09:51.201 -06:00 [INF] Executed action VulnerableApp.Controllers.AuthController.Login (VulnerableApp) in 3979.1576ms
+2026-07-02 15:09:51.203 -06:00 [INF] Executed endpoint 'VulnerableApp.Controllers.AuthController.Login (VulnerableApp)'
+2026-07-02 15:09:51.206 -06:00 [INF] Session started; Key:b43b29a6-991c-793c-c527-80f3cbaeb9e5, Id:4eb25e50-d33d-1fb0-5223-6838872be883
+2026-07-02 15:09:51.219 -06:00 [INF] Request finished HTTP/1.1 POST http://localhost:5228/auth/login - 302 0 null 4051.4686ms
+2026-07-02 15:09:51.225 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/Auth/Dashboard - null null
+2026-07-02 15:09:51.230 -06:00 [INF] Executing endpoint 'VulnerableApp.Controllers.AuthController.Dashboard (VulnerableApp)'
+2026-07-02 15:09:51.233 -06:00 [INF] Route matched with {action = "Dashboard", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Dashboard() on controller VulnerableApp.Controllers.AuthController (VulnerableApp).
+2026-07-02 15:09:51.243 -06:00 [INF] Inicio Auth.Dashboard. Usuario: user1, IP: ::1
+2026-07-02 15:09:51.338 -06:00 [INF] Executed DbCommand (6ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Balance], [u].[CreatedAt], [u].[Email], [u].[Password], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @p
+2026-07-02 15:09:51.342 -06:00 [INF] Fin Auth.Dashboard. Tiempo: 99 ms
+2026-07-02 15:09:51.345 -06:00 [INF] Executing ViewResult, running view Dashboard.
+2026-07-02 15:09:51.358 -06:00 [INF] Executed ViewResult - view Dashboard executed in 14.088ms.
+2026-07-02 15:09:51.360 -06:00 [INF] Executed action VulnerableApp.Controllers.AuthController.Dashboard (VulnerableApp) in 124.0851ms
+2026-07-02 15:09:51.366 -06:00 [INF] Executed endpoint 'VulnerableApp.Controllers.AuthController.Dashboard (VulnerableApp)'
+2026-07-02 15:09:51.368 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/Auth/Dashboard - 200 null text/html; charset=utf-8 143.3638ms
+2026-07-02 15:09:51.416 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-02 15:09:51.418 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/css/site.css?v=2YAZiK4O-UnINKDlzRwWlX89s0X4xxj6MFk9yPjPSvY - null null
+2026-07-02 15:09:51.421 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/jquery/dist/jquery.min.js - null null
+2026-07-02 15:09:51.422 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.422 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-02 15:09:51.421 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/VulnerableApp.styles.css?v=pGi5QHI7edwYw-oFSAhNLpFbjP5kWh034lowgBP76Dk - null null
+2026-07-02 15:09:51.424 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5228/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-02 15:09:51.426 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.430 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.434 -06:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\4zpp9vfi2r-{0}-46ein0sx1k-46ein0sx1k.gz'
+2026-07-02 15:09:51.436 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.440 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.444 -06:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.446 -06:00 [INF] Sending file. Request path: 'css/site.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\mw87yb4kop-{0}-feam9ql89x-feam9ql89x.gz'
+2026-07-02 15:09:51.449 -06:00 [INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\qbdzirddbn-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+2026-07-02 15:09:51.449 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.453 -06:00 [INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\1pcvqu3pys-{0}-493y06b0oq-493y06b0oq.gz'
+2026-07-02 15:09:51.454 -06:00 [INF] Sending file. Request path: 'VulnerableApp.styles.css'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\uoihj7ooh1-{0}-872arltcfk-872arltcfk.gz'
+2026-07-02 15:09:51.456 -06:00 [INF] Sending file. Request path: 'js/site.js'. Physical path: 'C:\Users\Mau50\source\repos\VulnerableApp\obj\Debug\net10.0\compressed\vooadvfgdr-{0}-xtxxf3hu2r-xtxxf3hu2r.gz'
+2026-07-02 15:09:51.458 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.460 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.462 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 45.7324ms
+2026-07-02 15:09:51.464 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.466 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.468 -06:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-07-02 15:09:51.469 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/css/site.css?v=2YAZiK4O-UnINKDlzRwWlX89s0X4xxj6MFk9yPjPSvY - 200 695 text/css 51.78ms
+2026-07-02 15:09:51.471 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 50.2677ms
+2026-07-02 15:09:51.481 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 58.8669ms
+2026-07-02 15:09:51.483 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/VulnerableApp.styles.css?v=pGi5QHI7edwYw-oFSAhNLpFbjP5kWh034lowgBP76Dk - 200 1142 text/css 62.0985ms
+2026-07-02 15:09:51.485 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5228/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 60.9025ms
+2026-07-02 15:13:24.333 -06:00 [INF] Application is shutting down...
+2026-07-02 22:26:31.659 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 22:26:31.719 -06:00 [INF] User profile is available. Using 'C:\Users\Mau50\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-02 22:26:31.787 -06:00 [INF] Now listening on: http://localhost:5228
+2026-07-02 22:26:31.790 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-02 22:26:31.792 -06:00 [INF] Hosting environment: Development
+2026-07-02 22:26:31.793 -06:00 [INF] Content root path: C:\Users\Mau50\source\repos\VulnerableApp
+2026-07-02 22:26:46.751 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 22:30:29.785 -06:00 [WRN] Failed to determine the https port for redirect.
+2026-07-02 22:30:30.047 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at VulnerableApp.Controllers.AuthController.Dashboard() in C:\Users\Mau50\source\repos\VulnerableApp\Controllers\AuthController.cs:line 61
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-02 22:31:10.395 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at VulnerableApp.Controllers.AuthController.Dashboard() in C:\Users\Mau50\source\repos\VulnerableApp\Controllers\AuthController.cs:line 61
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-02 22:31:12.241 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at VulnerableApp.Controllers.AuthController.Dashboard() in C:\Users\Mau50\source\repos\VulnerableApp\Controllers\AuthController.cs:line 61
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-02 22:31:23.847 -06:00 [INF] Inicio Auth.Login. Intento de acceso para Usuario: user1 desde IP: ::1
+2026-07-02 22:31:25.974 -06:00 [ERR] Error en Auth.Login intentando autenticar al Usuario: user1
+System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at VulnerableApp.Controllers.AuthController.Login(String username, String password) in C:\Users\Mau50\source\repos\VulnerableApp\Controllers\AuthController.cs:line 43
+2026-07-02 22:31:25.978 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at VulnerableApp.Controllers.AuthController.Login(String username, String password) in C:\Users\Mau50\source\repos\VulnerableApp\Controllers\AuthController.cs:line 43
+   at lambda_method26(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-02 22:31:37.697 -06:00 [INF] Iniciando VulnerableApp
+2026-07-02 22:31:53.487 -06:00 [WRN] Failed to determine the https port for redirect.
+2026-07-02 22:31:53.660 -06:00 [INF] Inicio Auth.Login. Intento de acceso para Usuario: user1 desde IP: ::1
+2026-07-02 22:31:54.570 -06:00 [INF] Evento de Autenticación: Login exitoso para Usuario: user1. Fin Auth.Login. Tiempo: 913 ms
+2026-07-02 22:31:54.609 -06:00 [INF] Inicio Auth.Dashboard. Usuario: user1, IP: ::1
+2026-07-02 22:31:54.665 -06:00 [INF] Fin Auth.Dashboard. Tiempo: 57 ms
+2026-07-02 22:32:34.325 -06:00 [INF] Inicio Home.Index desde IP: ::1
+2026-07-02 22:32:34.327 -06:00 [INF] Fin Home.Index. Tiempo: 2 ms
+2026-07-02 22:32:38.481 -06:00 [INF] Inicio Search.Index. Parámetro búsqueda: null, Usuario: user1, IP: ::1
+2026-07-02 22:32:38.483 -06:00 [INF] Fin Search.Index (Búsqueda vacía). Tiempo: 2 ms
+2026-07-02 22:32:41.865 -06:00 [INF] Inicio Search.Index. Parámetro búsqueda: user 1, Usuario: user1, IP: ::1
+2026-07-02 22:32:41.947 -06:00 [INF] Fin Search.Index. Se encontraron 0 resultados. Tiempo: 81 ms
+2026-07-02 22:32:44.928 -06:00 [INF] Inicio Search.Index. Parámetro búsqueda: user1, Usuario: user1, IP: ::1
+2026-07-02 22:32:44.935 -06:00 [INF] Fin Search.Index. Se encontraron 1 resultados. Tiempo: 7 ms
+2026-07-02 22:34:09.671 -06:00 [INF] Inicio Search.Index. Parámetro búsqueda: user1, Usuario: user1, IP: ::1
+2026-07-02 22:34:09.676 -06:00 [INF] Fin Search.Index. Se encontraron 1 resultados. Tiempo: 5 ms
