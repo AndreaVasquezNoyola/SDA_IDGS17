@@ -12,7 +12,7 @@ using VulnerableApp.Data;
 namespace VulnerableApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260602013615_InitialCreate")]
+    [Migration("20260708172059_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -34,6 +34,7 @@ namespace VulnerableApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<decimal>("Balance")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("CreatedAt")
@@ -60,7 +61,7 @@ namespace VulnerableApp.Migrations
                         {
                             Id = 1,
                             Balance = 1000m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@test.com",
                             Password = "admin",
                             Username = "admin"
@@ -69,7 +70,7 @@ namespace VulnerableApp.Migrations
                         {
                             Id = 2,
                             Balance = 500m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user@test.com",
                             Password = "123456",
                             Username = "user1"
@@ -78,7 +79,7 @@ namespace VulnerableApp.Migrations
                         {
                             Id = 3,
                             Balance = 750m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user2@test.com",
                             Password = "password",
                             Username = "user2"

@@ -23,7 +23,7 @@ namespace VulnerableApp.Controllers
                 user.Username,
                 user.Email,
                 user.Balance,
-                user.Password // VULNERABILIDAD: Exponiendo la contraseña en texto plano
+                user.Password 
             });
         }
 

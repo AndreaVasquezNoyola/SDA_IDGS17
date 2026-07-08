@@ -1,31 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mau50\\source\\repos\\VulnerableApp\\VulnerableApp.csproj": {}
+    "C:\\Users\\Andyy\\OneDrive\\Documentos\\SDA_8vo\\practicas\\VulnerableApp\\VulnerableApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mau50\\source\\repos\\VulnerableApp\\VulnerableApp.csproj": {
+    "C:\\Users\\Andyy\\OneDrive\\Documentos\\SDA_8vo\\practicas\\VulnerableApp\\VulnerableApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mau50\\source\\repos\\VulnerableApp\\VulnerableApp.csproj",
+        "projectUniqueName": "C:\\Users\\Andyy\\OneDrive\\Documentos\\SDA_8vo\\practicas\\VulnerableApp\\VulnerableApp.csproj",
         "projectName": "VulnerableApp",
-        "projectPath": "C:\\Users\\Mau50\\source\\repos\\VulnerableApp\\VulnerableApp.csproj",
-        "packagesPath": "C:\\Users\\Mau50\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mau50\\source\\repos\\VulnerableApp\\obj\\",
+        "projectPath": "C:\\Users\\Andyy\\OneDrive\\Documentos\\SDA_8vo\\practicas\\VulnerableApp\\VulnerableApp.csproj",
+        "packagesPath": "C:\\Users\\Andyy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andyy\\OneDrive\\Documentos\\SDA_8vo\\practicas\\VulnerableApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mau50\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Andyy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,10 +50,6 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
-            "BCrypt.Net-Next": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -75,18 +69,6 @@
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[10.0.0, )"
-            },
-            "Serilog.Enrichers.Environment": {
-              "target": "Package",
-              "version": "[3.0.1, )"
-            },
-            "Serilog.Sinks.Console": {
-              "target": "Package",
-              "version": "[6.1.1, )"
-            },
-            "Serilog.Sinks.File": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "Serilog.Sinks.Seq": {
               "target": "Package",
@@ -112,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

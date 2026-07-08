@@ -7,51 +7,62 @@ namespace VulnerableApp.Controllers
     public class AuthController : Controller
     {
         private readonly AppDbContext _db;
+        private readonly ILogger<AuthController> _logger;
 
-        public AuthController(AppDbContext db)
+        public AuthController(AppDbContext db, ILogger<AuthController> logger)
         {
             _db = db;
+            _logger = logger;
         }
 
         public IActionResult Login() => View();
 
         [HttpPost]
-        public ActionResult Login(string username, string password)
+        public IActionResult Login(string username, string password)
         {
-            // Vulnerabilidad 1: Credenciales predeterminadas quemadas en código
-            if (username == "admin" && password == "admin")
+            _logger.LogInformation("Intento de login para usuario: {User}, IP: {IP}", username, HttpContext.Connection.RemoteIpAddress);
+
+            try
             {
-                HttpContext.Session.SetString("User", username);
-                HttpContext.Session.SetInt32("UserId", 1);
-                return RedirectToAction("Dashboard");
+                if (username == "admin" && password == "admin")
+                {
+                    HttpContext.Session.SetString("User", username);
+                    HttpContext.Session.SetInt32("UserId", 1);
+                    return RedirectToAction("Dashboard");
+                }
+
+                string query = "SELECT * FROM Users WHERE Username = '" + username + "' AND Password ='" + password + "'";
+                var user = _db.Users.FromSqlRaw(query).FirstOrDefault();
+                
+                if (user != null)
+                {
+                    HttpContext.Session.SetString("User", user.Username);
+                    HttpContext.Session.SetInt32("UserId", user.Id);
+                    return RedirectToAction("Dashboard");
+                }
+
+                _logger.LogWarning("Login fallido para usuario: {User}", username);
+                ViewBag.Error = "Usuario/contraseña inválido";
+                return View();
             }
-
-            // Vulnerabilidad 2: Concatenación directa (SQL Injection)
-            string query = "SELECT * FROM Users WHERE Username = '" + username + "' AND Password = '" + password + "'";
-            var user = _db.Users.FromSqlRaw(query).FirstOrDefault();
-
-            if (user != null)
+            catch (Exception ex)
             {
-                HttpContext.Session.SetString("User", user.Username);
-                HttpContext.Session.SetInt32("UserId", user.Id);
-                return RedirectToAction("Dashboard");
+                _logger.LogError(ex, "Error crítico en Login");
+                throw;
             }
-
-            ViewBag.Error = "Usuario/contraseña inválido";
-            return View();
         }
 
-        public ActionResult Dashboard()
+        public IActionResult Dashboard()
         {
             var userId = HttpContext.Session.GetInt32("UserId");
             if (!userId.HasValue) return RedirectToAction("Login");
-
             var user = _db.Users.Find(userId.Value);
             return View(user);
         }
 
-        public ActionResult Logout()
+        public IActionResult Logout()
         {
+            _logger.LogInformation("Cierre de sesión para usuario: {User}", HttpContext.Session.GetString("User"));
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }
