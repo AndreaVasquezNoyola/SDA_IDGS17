@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Controllers",
-    "\\Middlewares"
+    ""
   ],
-  "SelectedNode": "\\Controllers\\ApiController.cs",
+  "SelectedNode": "\\promtail-config.yaml",
   "PreviewInSolutionExplorer": false
 }

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using VulnerableApp.Data;
 using VulnerableApp.Models;
+using System.Diagnostics;
 
 namespace VulnerableApp.Controllers
 {
@@ -16,21 +16,32 @@ namespace VulnerableApp.Controllers
             _logger = logger;
         }
 
-        public ActionResult Index(string search)
+        public IActionResult Index(string search)
         {
-            _logger.LogInformation("Inicio Search.Index con parámetro: {search}", search); 
-            
-            if (string.IsNullOrEmpty(search))
-                return View(new List<User>());
+            var sw = Stopwatch.StartNew();
+            var ip = HttpContext.Connection.RemoteIpAddress?.ToString();
+            var user = HttpContext.Session.GetString("User") ?? "Anónimo";
 
-            try {
-                string query = "SELECT * FROM Users WHERE Username LIKE '%" + search + "%'";
-                var users = _db.Users.FromSqlRaw(query).ToList();
-                _logger.LogInformation("Fin Search.Index, registros encontrados: {count}", users.Count); 
+            _logger.LogInformation("Inicio Search.Index. Parámetro búsqueda: {SearchParam}, Usuario: {User}, IP: {IP}", search, user, ip);
+
+            try
+            {
+                if (string.IsNullOrEmpty(search))
+                {
+                    sw.Stop();
+                    _logger.LogInformation("Fin Search.Index (Búsqueda vacía). Tiempo: {ElapsedMilliseconds} ms", sw.ElapsedMilliseconds);
+                    return View(new List<User>());
+                }
+
+                var users = _db.Users.Where(u => u.Username!.Contains(search)).ToList();
+
+                sw.Stop();
+                _logger.LogInformation("Fin Search.Index. Se encontraron {Count} resultados. Tiempo: {ElapsedMilliseconds} ms", users.Count, sw.ElapsedMilliseconds);
                 return View(users);
             }
-            catch (Exception ex) {
-                _logger.LogError(ex, "Error en Search.Index para usuario: {User}", User.Identity?.Name);
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error en Search.Index al buscar '{SearchParam}' por el Usuario: {User}", search, user);
                 throw;
             }
         }

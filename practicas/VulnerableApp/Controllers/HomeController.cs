@@ -2,33 +2,43 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using VulnerableApp.Models;
 
-namespace VulnerableApp.Controllers;
-
-public class HomeController : Controller
+namespace VulnerableApp.Controllers
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public class HomeController : Controller
     {
-        _logger = logger;
-    }
+        private readonly ILogger<HomeController> _logger;
 
-    public IActionResult Index()
-    {
-        _logger.LogInformation("Acceso a Home.Index");
-        return View();
-    }
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
 
-    public IActionResult Privacy()
-    {
-        _logger.LogInformation("Acceso a Home.Privacy");
-        return View();
-    }
+        public IActionResult Index()
+        {
+            var sw = Stopwatch.StartNew();
+            var ip = HttpContext.Connection.RemoteIpAddress?.ToString();
+            _logger.LogInformation("Inicio Home.Index desde IP: {IP}", ip);
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        _logger.LogError("Acceso a página de Error. TraceId: {TraceId}", Activity.Current?.Id ?? HttpContext.TraceIdentifier);
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            sw.Stop();
+            _logger.LogInformation("Fin Home.Index. Tiempo: {ElapsedMilliseconds} ms", sw.ElapsedMilliseconds);
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            var sw = Stopwatch.StartNew();
+            _logger.LogInformation("Inicio Home.Privacy");
+
+            sw.Stop();
+            _logger.LogInformation("Fin Home.Privacy. Tiempo: {ElapsedMilliseconds} ms", sw.ElapsedMilliseconds);
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            _logger.LogWarning("Acceso a Home.Error. Ocurrió una excepción no controlada en la aplicación.");
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
     }
 }

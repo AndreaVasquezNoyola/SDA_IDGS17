@@ -19,3 +19,70 @@
 2026-07-06 19:12:08.109 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css respondió 200 en 16 ms
 2026-07-06 19:12:08.132 -06:00 [INF] Petición completada: HTTP GET /lib/jquery/dist/jquery.min.js respondió 200 en 35 ms
 2026-07-06 19:12:08.214 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js respondió 200 en 117 ms
+2026-07-06 19:17:27.469 -06:00 [INF] Iniciando VulnerableApp
+2026-07-06 19:45:54.538 -06:00 [WRN] Failed to determine the https port for redirect.
+2026-07-06 19:45:54.709 -06:00 [INF] Inicio Comment.Index.
+2026-07-06 19:45:54.713 -06:00 [INF] Fin Comment.Index. Tiempo: 5 ms
+2026-07-06 19:45:54.887 -06:00 [INF] Petición completada: HTTP GET /comment respondió 200 en 334 ms
+2026-07-06 19:45:54.977 -06:00 [INF] Petición completada: HTTP GET /VulnerableApp.styles.css respondió 200 en 38 ms
+2026-07-06 19:45:54.977 -06:00 [INF] Petición completada: HTTP GET /js/site.js respondió 200 en 33 ms
+2026-07-06 19:45:54.977 -06:00 [INF] Petición completada: HTTP GET /css/site.css respondió 200 en 38 ms
+2026-07-06 19:45:55.005 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css respondió 200 en 66 ms
+2026-07-06 19:45:55.005 -06:00 [INF] Petición completada: HTTP GET /lib/jquery/dist/jquery.min.js respondió 200 en 62 ms
+2026-07-06 19:45:55.005 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js respondió 200 en 62 ms
+2026-07-06 19:46:01.428 -06:00 [INF] Inicio Comment.AddComment. Parámetro comentario: mamones
+, Usuario: Anónimo, IP: ::1
+2026-07-06 19:46:01.432 -06:00 [INF] Comentario agregado exitosamente por el Usuario: Anónimo
+2026-07-06 19:46:01.434 -06:00 [INF] Fin Comment.AddComment. Tiempo: 10 ms
+2026-07-06 19:46:01.437 -06:00 [INF] Petición completada: HTTP POST /Comment/AddComment respondió 302 en 60 ms
+2026-07-06 19:46:01.449 -06:00 [INF] Inicio Comment.Index.
+2026-07-06 19:46:01.451 -06:00 [INF] Fin Comment.Index. Tiempo: 1 ms
+2026-07-06 19:46:01.459 -06:00 [INF] Petición completada: HTTP GET /Comment respondió 200 en 12 ms
+2026-07-06 19:46:01.520 -06:00 [INF] Petición completada: HTTP GET /VulnerableApp.styles.css respondió 200 en 4 ms
+2026-07-06 19:46:01.522 -06:00 [INF] Petición completada: HTTP GET /css/site.css respondió 200 en 6 ms
+2026-07-06 19:46:01.523 -06:00 [INF] Petición completada: HTTP GET /js/site.js respondió 200 en 5 ms
+2026-07-06 19:46:01.529 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css respondió 200 en 16 ms
+2026-07-06 19:46:01.581 -06:00 [INF] Petición completada: HTTP GET /lib/jquery/dist/jquery.min.js respondió 200 en 63 ms
+2026-07-06 19:46:01.614 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js respondió 200 en 96 ms
+2026-07-06 19:46:33.660 -06:00 [INF] Petición completada: HTTP GET /auth/login respondió 200 en 390 ms
+2026-07-06 19:46:33.709 -06:00 [INF] Petición completada: HTTP GET /css/site.css respondió 200 en 3 ms
+2026-07-06 19:46:33.710 -06:00 [INF] Petición completada: HTTP GET /VulnerableApp.styles.css respondió 200 en 3 ms
+2026-07-06 19:46:33.715 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css respondió 200 en 8 ms
+2026-07-06 19:46:33.715 -06:00 [INF] Petición completada: HTTP GET /js/site.js respondió 200 en 3 ms
+2026-07-06 19:46:33.716 -06:00 [INF] Petición completada: HTTP GET /lib/jquery/dist/jquery.min.js respondió 200 en 3 ms
+2026-07-06 19:46:33.716 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js respondió 200 en 3 ms
+2026-07-06 19:46:41.036 -06:00 [INF] Inicio Auth.Login. Intento de acceso para Usuario: admin  desde IP: ::1
+2026-07-06 19:46:44.337 -06:00 [INF] Evento de Autenticación: Login exitoso para Usuario: admin . Fin Auth.Login. Tiempo: 3301 ms
+2026-07-06 19:46:44.341 -06:00 [INF] Petición completada: HTTP POST /auth/login respondió 302 en 3347 ms
+2026-07-06 19:46:44.362 -06:00 [INF] Inicio Auth.Dashboard. Usuario: admin, IP: ::1
+2026-07-06 19:46:44.481 -06:00 [INF] Fin Auth.Dashboard. Tiempo: 119 ms
+2026-07-06 19:46:44.497 -06:00 [INF] Petición completada: HTTP GET /Auth/Dashboard respondió 200 en 143 ms
+2026-07-06 19:46:44.623 -06:00 [INF] Petición completada: HTTP GET /VulnerableApp.styles.css respondió 200 en 1 ms
+2026-07-06 19:46:44.623 -06:00 [INF] Petición completada: HTTP GET /css/site.css respondió 200 en 2 ms
+2026-07-06 19:46:44.624 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css respondió 200 en 4 ms
+2026-07-06 19:46:44.628 -06:00 [INF] Petición completada: HTTP GET /js/site.js respondió 200 en 2 ms
+2026-07-06 19:46:44.630 -06:00 [INF] Petición completada: HTTP GET /lib/jquery/dist/jquery.min.js respondió 200 en 5 ms
+2026-07-06 19:46:44.630 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js respondió 200 en 4 ms
+2026-07-06 19:46:54.209 -06:00 [INF] Inicio Comment.Index.
+2026-07-06 19:46:54.214 -06:00 [INF] Fin Comment.Index. Tiempo: 5 ms
+2026-07-06 19:46:54.220 -06:00 [INF] Petición completada: HTTP GET /comment respondió 200 en 12 ms
+2026-07-06 19:46:54.279 -06:00 [INF] Petición completada: HTTP GET /css/site.css respondió 200 en 2 ms
+2026-07-06 19:46:54.280 -06:00 [INF] Petición completada: HTTP GET /VulnerableApp.styles.css respondió 200 en 2 ms
+2026-07-06 19:46:54.281 -06:00 [INF] Petición completada: HTTP GET /lib/jquery/dist/jquery.min.js respondió 200 en 2 ms
+2026-07-06 19:46:54.281 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css respondió 200 en 4 ms
+2026-07-06 19:46:54.285 -06:00 [INF] Petición completada: HTTP GET /js/site.js respondió 200 en 2 ms
+2026-07-06 19:46:54.286 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js respondió 200 en 4 ms
+2026-07-06 19:47:00.296 -06:00 [INF] Inicio Comment.AddComment. Parámetro comentario: hola
+, Usuario: admin, IP: ::1
+2026-07-06 19:47:00.299 -06:00 [INF] Comentario agregado exitosamente por el Usuario: admin
+2026-07-06 19:47:00.301 -06:00 [INF] Fin Comment.AddComment. Tiempo: 4 ms
+2026-07-06 19:47:00.303 -06:00 [INF] Petición completada: HTTP POST /Comment/AddComment respondió 302 en 11 ms
+2026-07-06 19:47:00.313 -06:00 [INF] Inicio Comment.Index.
+2026-07-06 19:47:00.315 -06:00 [INF] Fin Comment.Index. Tiempo: 1 ms
+2026-07-06 19:47:00.318 -06:00 [INF] Petición completada: HTTP GET /Comment respondió 200 en 5 ms
+2026-07-06 19:47:00.373 -06:00 [INF] Petición completada: HTTP GET /VulnerableApp.styles.css respondió 200 en 2 ms
+2026-07-06 19:47:00.373 -06:00 [INF] Petición completada: HTTP GET /css/site.css respondió 200 en 2 ms
+2026-07-06 19:47:00.375 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css respondió 200 en 5 ms
+2026-07-06 19:47:00.376 -06:00 [INF] Petición completada: HTTP GET /js/site.js respondió 200 en 1 ms
+2026-07-06 19:47:00.384 -06:00 [INF] Petición completada: HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js respondió 200 en 9 ms
+2026-07-06 19:47:00.384 -06:00 [INF] Petición completada: HTTP GET /lib/jquery/dist/jquery.min.js respondió 200 en 11 ms
