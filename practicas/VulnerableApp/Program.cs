@@ -1,23 +1,25 @@
 using Microsoft.EntityFrameworkCore;
 using VulnerableApp.Data;
 using Serilog;
+using Serilog.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. REGISTRA TODOS TUS SERVICIOS AQUÍ
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddSession();
 
-// 2. CONFIGURA SERILOG 
 Log.Logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(builder.Configuration) 
+    .ReadFrom.Configuration(builder.Configuration)
     .WriteTo.Console()
-    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day) 
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.Logger(lc => lc
+        .Filter.ByIncludingOnly(Matching.FromSource("VulnerableApp.Controllers.AuthController"))
+        .WriteTo.File("Logs/security-.txt", rollingInterval: RollingInterval.Day))
     .WriteTo.Seq("http://localhost:5341")
-    .Enrich.FromLogContext() 
-    .Enrich.WithMachineName() 
+    .Enrich.FromLogContext()
+    .Enrich.WithMachineName()
     .CreateLogger();
 
 builder.Host.UseSerilog();

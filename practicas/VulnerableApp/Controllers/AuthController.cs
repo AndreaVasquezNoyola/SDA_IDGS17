@@ -29,7 +29,10 @@ namespace VulnerableApp.Controllers
             try
             {
                 var user = _db.Users.FirstOrDefault(u => u.Username == username);
-                bool isPasswordValid = user != null && (user.Password == password || BCrypt.Net.BCrypt.Verify(password, user.PasswordHash));
+               bool isPasswordValid = user != null && (
+    user.Password == password || 
+    (!string.IsNullOrEmpty(user.PasswordHash) && BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
+);
 
                 if (user == null || !isPasswordValid)
                 {

@@ -58,7 +58,7 @@ namespace VulnerableApp.Migrations
                         {
                             Id = 1,
                             Balance = 1000m,
-                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Utc),
                             Email = "admin@test.com",
                             Password = "admin",
                             Username = "admin"
@@ -67,7 +67,7 @@ namespace VulnerableApp.Migrations
                         {
                             Id = 2,
                             Balance = 500m,
-                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Utc),
                             Email = "user@test.com",
                             Password = "123456",
                             Username = "user1"
@@ -76,7 +76,7 @@ namespace VulnerableApp.Migrations
                         {
                             Id = 3,
                             Balance = 750m,
-                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2026, 1, 1, 12, 0, 0, 0, DateTimeKind.Utc),
                             Email = "user2@test.com",
                             Password = "password",
                             Username = "user2"

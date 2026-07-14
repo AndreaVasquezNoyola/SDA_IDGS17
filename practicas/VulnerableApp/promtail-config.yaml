@@ -3,28 +3,45 @@ server:
   grpc_listen_port: 0
 
 positions:
-  filename: /tmp/positions.yaml 
+  filename: /tmp/positions.yaml
 
 clients:
   - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
-  - job_name: vulnerableapp_logs
+  - job_name: vulnerableapp_general
     static_configs:
       - targets:
           - localhost
         labels:
           job: vulnerableapp
-          app: VulnerableApp 
-          __path__: /var/log/VulnerableApp/*.txt 
-          
-    pipeline_stages:
+          app: VulnerableApp
+          environment: dev
+          module: application
+          __path__: /var/log/VulnerableApp/log-*.txt
+
+  - pipeline_stages:
       - regex:
-          
           expression: '.*(?P<keyword>Auth\.Login|Auth\.Dashboard|Search\.Index).*'
       - template:
           source: category
-          
-          template: '{{ if eq .keyword "Auth.Login" }}Security{{ else if eq .keyword "Auth.Dashboard" }}Security{{ else if eq .keyword "Search.Index" }}Audit{{ else }}General{{ end }}'
+          template: '{{ if eq .keyword "Auth.Login" }}Security{{ else if eq .keyword "Auth.Dashboard" }}Security{{ else if eq .keyword "Search.Index" }}Audit{{ else }}Application{{ end }}'
       - labels:
-          category: 
+          category:
+      - template:
+          source: module
+          template: '{{ if eq .keyword "Search.Index" }}orders{{ else }}application{{ end }}'
+      - labels:
+          module:
+
+  - job_name: vulnerableapp_security
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: vulnerableapp
+          app: VulnerableApp
+          environment: dev
+          module: authentication
+          category: Security
+          __path__: /var/log/VulnerableApp/security-*.txt
