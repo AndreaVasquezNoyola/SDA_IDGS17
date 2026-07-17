@@ -19,8 +19,7 @@ scrape_configs:
           environment: dev
           module: application
           __path__: /var/log/VulnerableApp/log-*.txt
-
-  - pipeline_stages:
+    pipeline_stages:
       - regex:
           expression: '.*(?P<keyword>Auth\.Login|Auth\.Dashboard|Search\.Index).*'
       - template:
