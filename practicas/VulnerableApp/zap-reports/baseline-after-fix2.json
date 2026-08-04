@@ -1,0 +1,59 @@
+{
+	"@programName": "ZAP",
+	"@version": "2.17.0",
+	"@generated": "Fri, 24 Jul 2026 01:44:55",
+	"created": "2026-07-24T01:44:55.427909477Z",
+	"site":[ 
+		{
+			"@name": "http://vulnerable_app:8080",
+			"@host": "vulnerable_app",
+			"@port": "80",
+			"@ssl": "false",
+			"alerts": [ 
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-13",
+					"alert": "CSP: Failure to Define Directive with No Fallback",
+					"name": "CSP: Failure to Define Directive with No Fallback",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
+					"instances":[ 
+						{
+							"id": "1",
+							"uri": "http://vulnerable_app:8080",
+							"nodeName": "http:\/\/vulnerable_app:8080",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "0",
+							"uri": "http://vulnerable_app:8080/",
+							"nodeName": "http:\/\/vulnerable_app:8080\/",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self'",
+							"otherinfo": "The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src."
+						}
+					],
+					"count": "2",
+					"systemic": false,
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>The directive(s): frame-ancestors, form-action is/are among the directives that do not fallback to default-src.</p>",
+					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "7"
+				}
+			]
+		}
+	],
+	"sequences":[
+	]
+
+}

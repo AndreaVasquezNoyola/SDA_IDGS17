@@ -472,3 +472,9 @@ C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\obj\Debug\net
 C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\obj\Debug\net10.0\VulnerableApp.pdb
 C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\obj\Debug\net10.0\VulnerableApp.genruntimeconfig.cache
 C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\obj\Debug\net10.0\ref\VulnerableApp.dll
+C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\bin\Debug\net10.0\zap-reports\baseline-report.json
+C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\bin\Debug\net10.0\zap-reports\api-report.json
+C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\bin\Debug\net10.0\zap-reports\baseline-after-fix.json
+C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\bin\Debug\net10.0\zap-reports\comment-report.json
+C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\bin\Debug\net10.0\zap-reports\fullscan-report.json
+C:\Users\Andyy\OneDrive\Documentos\SDA_8vo\practicas\VulnerableApp\bin\Debug\net10.0\zap-reports\search-report.json

@@ -12,7 +12,8 @@ namespace VulnerableApp.Controllers
         {
             _logger = logger;
         }
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Index()
         {
             var sw = Stopwatch.StartNew();

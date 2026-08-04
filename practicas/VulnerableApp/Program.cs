@@ -35,6 +35,13 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseMiddleware<VulnerableApp.Middlewares.GlobalLoggingMiddleware>();
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Append("Content-Security-Policy", "default-src 'self'; frame-ancestors 'self'; form-action 'self'");
+    context.Response.Headers.Append("X-Frame-Options", "DENY");
+    context.Response.Headers.Append("X-Content-Type-Options", "nosniff");
+    await next();
+});
 app.UseRouting();
 app.UseSession();
 app.UseAuthorization();

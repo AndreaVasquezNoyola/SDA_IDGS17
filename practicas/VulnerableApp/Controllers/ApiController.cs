@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using VulnerableApp.Data;
 using System.Diagnostics;
+using System.Linq;
 
 namespace VulnerableApp.Controllers
 {
@@ -59,7 +60,7 @@ namespace VulnerableApp.Controllers
             }
         }
 
-        [HttpGet("users")]
+[HttpGet("users")]
         public IActionResult GetAllUsers()
         {
             var sw = Stopwatch.StartNew();
@@ -70,7 +71,17 @@ namespace VulnerableApp.Controllers
 
             try
             {
-                var users = _db.Users.ToList();
+                var currentUserId = HttpContext.Session.GetInt32("UserId");
+                if (!currentUserId.HasValue)
+                {
+                    _logger.LogWarning("Api.GetAllUsers: Acceso denegado (No autenticado) desde IP: {IP}", ip);
+                    return StatusCode(401, "No autenticado.");
+                }
+
+                var users = _db.Users
+                    .Select(u => new { u.Id, u.Username, u.Email })
+                    .ToList();
+
                 sw.Stop();
                 _logger.LogInformation("Fin Api.GetAllUsers. Registros devueltos: {Count}. Tiempo: {ElapsedMilliseconds} ms", users.Count, sw.ElapsedMilliseconds);
                 return Ok(users);
